@@ -25,11 +25,9 @@ router.post("/create-checkout-session", async (req, res) => {
             line_items: lineItems,
             mode: "payment",
             success_url: isLocal
-                ? "http://localhost:5173/success"
-                : `${process.env.FRONTEND_URL}/success`,
+                ? "http://localhost:5173/success" : `${process.env.FRONTEND_URL}/success`,
             cancel_url: isLocal
-                ? "http://localhost:5173/cancel"
-                : `${process.env.FRONTEND_URL}/cancel`,
+                ? "http://localhost:5173/cancel" : `${process.env.FRONTEND_URL}/cancel`,
         });
 
         console.log("SESSION OBJECT:", session);
