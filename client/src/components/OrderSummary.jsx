@@ -14,7 +14,7 @@ const OrderSummary = () => {
     const apiURL =
         window.location.hostname === "localhost"
             ? "http://localhost:5000/api/create-checkout-session" //Local Testing
-            : "https://shopping-cart-v4lv.onrender.com/api/create-checkout-session";
+            : "https://shopping-cart-i43n.onrender.com/api/create-checkout-session";
 
     const makePayment = async () => {
         try {

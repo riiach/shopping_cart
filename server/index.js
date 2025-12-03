@@ -7,7 +7,7 @@ const app = express()
 app.use(cors({
     origin: [
         "http://localhost:5173", // URL for local host
-        "https://powderblue-pheasant-997935.hostingersite.com/",
+        `${process.env.FRONTEND_URL}`,
     ],
     methods: "GET,POST,PUT,DELETE",
     credentials: true
