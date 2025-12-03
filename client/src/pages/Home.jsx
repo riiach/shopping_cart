@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <>
             <NavbarHome />
-            <ProductCard items={product}/>
+            <ProductCard items={product} />
         </>
     )
 }

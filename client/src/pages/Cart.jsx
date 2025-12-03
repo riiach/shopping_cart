@@ -35,8 +35,8 @@ const Cart = () => {
             </div>
 
             {/* Main layout */}
-            <div className="content max-w-7xl mx-auto px-5 sm:px-10 mb-24 gap-8 lg:gap-8 ">
-                <div className="flex flex-col lg:flex-row w-full gap-8 lg:gap-8 items-start">
+            <div className="content flex flex-col max-w-7xl mx-auto px-5 mb-24 gap-8">
+            <div className="flex flex-col lg:flex-row w-full gap-8 lg:gap-8 items-start">
                     {/* LEFT column */}
                     <div className="flex flex-col w-full lg:w-3/5">
                         <CartItemCard />   {/* DO NOT pass items */}
@@ -44,7 +44,7 @@ const Cart = () => {
                         {/* Empty Cart button  */}
                         <div className="flex flex-row w-full justify-end">
                             <button
-                                className="empty-cart-btn mt-4 px-4 py-2 text-indigo-700 rounded-lg transition-colors w-full sm:w-auto hover:underline"
+                                className="empty-cart-btn mt-4 px-2 py-2 text-indigo-700 rounded-lg transition-colors w-full sm:w-auto hover:underline text-right"
                                 onClick={handleEmptyCart}
                             >
                                 Empty Cart

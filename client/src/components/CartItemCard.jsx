@@ -46,16 +46,16 @@ const CartItemCard = () => {
     };
 
     return (
-        <div className="flex flex-col w-full lg:w-full">
+        <div className="flex flex-col w-full lg:w-full h-auto">
             {items.map((item) => (
                 <div
                     key={item.name}
-                    className="flex flex-col sm:flex-row w-full h-48 gap-4 sm:gap-6 items-start sm:items-center border-b border-neutral-200 pb-4 mt-3"
+                    className="flex flex-col sm:flex-row w-full gap-4 sm:gap-6 items-start sm:items-center border-b border-neutral-200 pb-4 mt-3"
                 >
                     <img
                         src={item.image}
                         alt={item.name}
-                        className="rounded-2xl w-full h-36 sm:w-2/5 object-cover"
+                        className="rounded-2xl w-full h-46 sm:w-2/5 object-cover"
                     />
 
                     <div className="flex flex-col justify-between w-full sm:w-3/5 space-y-4">
@@ -99,7 +99,7 @@ const CartItemCard = () => {
                                 </button>
                             </div>
 
-                            {/* 💲 Price */}
+                            {/* Price */}
                             <p className="text-lg font-medium text-end w-full sm:w-1/3">
                                 ${calculateTotalPrice(item)}
                             </p>

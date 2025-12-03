@@ -17,7 +17,7 @@ const itemCard = ({ items }) => {
     };
 
     return (
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-36 mb-24">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-24 mb-24 p-8">
             {items.map((item) => (
                 <div
                     key={item.id}
