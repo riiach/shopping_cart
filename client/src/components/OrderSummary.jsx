@@ -12,9 +12,10 @@ const OrderSummary = () => {
 
     { /* Change URL here */}
     const apiURL =
-        window.location.hostname === "localhost"
-            ? "http://localhost:5000/api/create-checkout-session" //Local Testing
-            : "https://shopping-cart-i43n.onrender.com/api/create-checkout-session";
+        (window.location.hostname === "localhost"
+                ? "http://localhost:5000/api/create-checkout-session"
+                : "https://shopping-cart-i43n.onrender.com/api/create-checkout-session"
+        ).trim();
 
     const makePayment = async () => {
         try {
