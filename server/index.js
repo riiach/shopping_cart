@@ -28,11 +28,15 @@ const paymentRoute = require("./routes/payment.js");
 
 app.use("/api", paymentRoute);
 
+app.get("/", (req, res) => {
+    res.send("Server is running");
+});
 
+// 404 handler
 app.use((req, res) => {
     res.status(404).json({ message: "Route not found" });
 });
 
-app.listen(process.env.PORT, () =>
-    console.log(`Server running on port ${process.env.PORT}`)
-);
+const PORT = process.env.PORT || 10000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
