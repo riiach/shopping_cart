@@ -34,12 +34,25 @@ const itemCard = ({ items }) => {
                     </div>
                     <button
                         onClick={() => handleAddToCart(item)}
-                        className="add-to-cart-btn mt-auto inline-flex items-center justify-center gap-2 text-neutral-900 px-4 py-2 rounded-md hover:bg-indigo-700 transition"
+                        className="add-to-cart-btn mt-auto inline-flex items-center justify-center gap-2 text-neutral-900 px-4 py-2 rounded-md transition shadow-sm hover:shadow-lg"
                     >
-                        Add to cart <AddRoundedIcon fontSize="small" />
+                        Add to cart <AddRoundedIcon fontSize="small" className="add-icon" />
                     </button>
                 </div>
             ))}
+            {/* 🔥 Animation for AddRoundedIcon */}
+            <style>
+                {`
+            .add-to-cart-btn .add-icon {
+                transition: transform 0.4s ease;
+            }
+
+            .add-to-cart-btn:hover .add-icon {
+                transform: rotate(90deg);
+                color: #4338CA;
+            }
+        `}
+            </style>
         </div>
     )
 }

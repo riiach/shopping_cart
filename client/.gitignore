@@ -24,5 +24,4 @@ dist-ssr
 *.sw?
 
 # Environment variables (do NOT commit these)
-.env
-.env.*
+../server/.env

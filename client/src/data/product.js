@@ -69,13 +69,6 @@ const products = [
         image: "https://images.pexels.com/photos/34922355/pexels-photo-34922355.jpeg",
         description: "Modern desk lamp with adjustable brightness."
     },
-    {
-        id: 11,
-        name: "Test",
-        price: 0.99,
-        image: "https://images.pexels.com/photos/8386697/pexels-photo-8386697.jpeg",
-        description: "Modern desk lamp with adjustable brightness."
-    },
 ];
 
 export default products;

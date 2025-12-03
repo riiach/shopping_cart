@@ -46,16 +46,16 @@ const CartItemCard = () => {
     };
 
     return (
-        <div className="flex flex-col w-full lg:w-3/4 gap-6">
+        <div className="flex flex-col w-full lg:w-full">
             {items.map((item) => (
                 <div
                     key={item.name}
-                    className="flex flex-col sm:flex-row w-full h-48 gap-4 sm:gap-6 items-start sm:items-center border-b border-neutral-200 pb-4"
+                    className="flex flex-col sm:flex-row w-full h-48 gap-4 sm:gap-6 items-start sm:items-center border-b border-neutral-200 pb-4 mt-3"
                 >
                     <img
                         src={item.image}
                         alt={item.name}
-                        className="rounded-2xl w-full h-full sm:w-2/5 object-cover"
+                        className="rounded-2xl w-full h-36 sm:w-2/5 object-cover"
                     />
 
                     <div className="flex flex-col justify-between w-full sm:w-3/5 space-y-4">
@@ -65,11 +65,11 @@ const CartItemCard = () => {
                         </div>
 
                         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-0">
-                            {/* Quantity & Remove */}
+                            {/* ➕➖ Quantity & Remove */}
                             <div className="flex items-center gap-3 sm:gap-6 w-full sm:w-2/3">
                                 <div className="flex items-center rounded-md shadow-sm hover:shadow-lg">
                                     <button
-                                        className="p-1 rounded-lg border w-8 h-8 flex items-center justify-center bg-neutral-100 hover:text-indigo-700"
+                                        className="p-1 rounded-lg w-8 h-8 flex items-center justify-center hover:text-indigo-700 border-none"
                                         onClick={() => handleDecrement(item)}
                                     >
                                         <RemoveRoundedIcon fontSize="small" />
@@ -84,7 +84,7 @@ const CartItemCard = () => {
                                     />
 
                                     <button
-                                        className="p-1 rounded-lg border w-8 h-8 flex items-center justify-center bg-neutral-100 hover:text-indigo-700"
+                                        className="p-1 rounded-lg w-8 h-8 flex items-center justify-center hover:text-indigo-700 border-none"
                                         onClick={() => handleIncrement(item)}
                                     >
                                         <AddRoundedIcon fontSize="small" />
@@ -92,14 +92,14 @@ const CartItemCard = () => {
                                 </div>
 
                                 <button
-                                    className="text-xs text-gray-600 hover:underline bg-transparent"
+                                    className="text-sm text-gray-600 hover:underline bg-transparent"
                                     onClick={() => handleRemove(item)}
                                 >
                                     Remove
                                 </button>
                             </div>
 
-                            {/* Price */}
+                            {/* 💲 Price */}
                             <p className="text-lg font-medium text-end w-full sm:w-1/3">
                                 ${calculateTotalPrice(item)}
                             </p>
