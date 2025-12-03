@@ -13,6 +13,7 @@ const itemCard = ({ items }) => {
             ...prev,
             [product.name]: true
         }));
+        alert("Added to cart ✨");
     };
 
     return (
