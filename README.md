@@ -46,23 +46,9 @@ This project was **hand-coded from scratch**, giving me deep experience with bac
 
 ## 📷 Screenshots
 
-> *(Replace these with real images)*
-
 ### 🏠 Home Page
 
-![Home Page](./screenshots/home.png)
-
-### 🛒 Cart Page
-
-![Cart Page](./screenshots/cart.png)
-
-### ✅ Payment Success
-
-![Success Page](./screenshots/success.png)
-
-### ❌ Payment Failed
-
-![Cancel Page](./screenshots/cancel.png)
+![Home Page](shopping_cart_preview.png)
 
 ---
 
